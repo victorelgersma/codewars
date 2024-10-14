@@ -6,30 +6,21 @@ def no_boring_zeros(n):
     1
     >>> no_boring_zeros(0)
     0
-    >>> no_boring_zeros(105)
-    10
+    >>> no_boring_zeros(1050)
+    105
     """
     ## return early if it is just a 0 
     if n == 0:
         return 0
-
-    ## convert number to string
-
-    num_str = str(n)
-
-    ## reverse the string
-    
-    num_str_rev = num_str[::-1]
+    result = ""
 
     ## iterate and strip if it is a zero
 
-    for char in num_str_rev:
-        if (char == '0'):
-            num_str_rev = num_str_rev[1:]
+
+    for char in reversed(s)
+        if (char != '0'):
 
     ## reverse the string, convert string to int and return
-
-    num_str_rev_rev = num_str_rev[::-1]
 
     return int(num_str_rev[::-1])
 
