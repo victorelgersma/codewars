@@ -2,4 +2,4 @@
 
 ## Todo
 
-- [ ] fix no zeros for heros
+- [x] fix no zeros for heros
