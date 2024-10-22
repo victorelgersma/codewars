@@ -1,6 +1,5 @@
 '''
 https://www.codewars.com/kata/55a5bfaa756cfede78000026/train/python
-
 '''
 
 def problem(a):
@@ -10,14 +9,14 @@ def problem(a):
     >>> problem(4)
     206
     >>> problem(4.0)
-    206
+    206.0
     '''
-    # Check that the type is either an int or a float
-    if isinstance(a, (int, float)):
+    try: 
         return 50*a+6
-    else: 
+    except TypeError:
         return 'Error'
     
+
 if __name__ == "__main__":
     import doctest
     doctest.testmod()
