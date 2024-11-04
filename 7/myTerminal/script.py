@@ -7,12 +7,8 @@ The input to the function will be an array of three distinct numbers (Haskell: a
     >>> gimme([2,3,1])
     0
     '''
-    array_copy = input_array.copy()
-    maximum = max(input_array)
-    minimum = min(input_array)
-    input_array.remove(minimum)
-    input_array.remove(maximum)
-    return array_copy.index(input_array[0])
+    middle_value=sorted(input_array)[1]
+    return input_array.index(middle_value)
 
 
 
