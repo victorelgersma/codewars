@@ -1,5 +1,5 @@
 
-def hello(name=None):
+def hello(name=""):
     """
 
     >>> hello("john")
@@ -9,21 +9,8 @@ def hello(name=None):
     >>> hello("")
     'Hello, World!'
     """
-    return f"Hello, {name.capitalize()}!" if defined(name) else 'Hello, World!'
+    return f"Hello, {name.capitalize()}!" if bool(name) else 'Hello, World!'
 
-
-def defined(var=None):
-    """
-    >>> defined("")
-    False
-    >>> defined(None)
-    False
-    >>> defined("Hello")
-    True
-    >>> defined()
-    False
-    """
-    return bool(var)
 
 if __name__ == "__main__":
     import doctest
