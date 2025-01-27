@@ -9,7 +9,6 @@ def alphabet_position(text):
         if char.isalpha():
             output_list.append(str(alphabet.find(char)+1))
     output = " ".join(output_list)
-    
     return output
 
 if __name__ == "__main__":
